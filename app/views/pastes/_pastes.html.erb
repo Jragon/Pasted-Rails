@@ -1,10 +1,11 @@
 <table id="hor-minimalist-a">
   <tbody>
-    <% @pastes.each do |paste| %>
+    <% collection.each do |paste| %>
       <tr>
         <td><%= link_to paste.name, paste %></td>
-        <td><%= paste.language.name %></td>
+        <td><%= link_to paste.language.name, language_path(paste.language.name) %></td>
         <td><%= link_to "Delete Paste", paste, method: :delete %></td>
+        <td><%= lines paste.content, paste.language %></td>
       </tr>
     <% end %>
   </tbody>

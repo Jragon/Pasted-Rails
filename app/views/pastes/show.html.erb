@@ -1,0 +1,7 @@
+<h1><%= @paste.name %></h1>
+
+<div>
+  <%= highlight @paste.content, @paste.language %>
+</div>
+
+<%= link_to "Back", :back %>

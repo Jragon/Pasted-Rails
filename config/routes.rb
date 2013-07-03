@@ -1,7 +1,7 @@
 Pasted::Application.routes.draw do
 
   resources :pastes
-  get 'language/:language', 'pastes#index', as: :langauge
+  get 'language/:language', to: 'pastes#index', as: :language
 
   root to: 'pastes#index'
   # The priority is based upon order of creation:

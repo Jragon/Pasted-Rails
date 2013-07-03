@@ -45,3 +45,4 @@ end
 
 gem 'simple_form'
 gem 'inherited_resources'
+gem 'coderay'
