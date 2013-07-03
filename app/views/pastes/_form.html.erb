@@ -1,0 +1,7 @@
+<%= simple_form_for @paste do |f| %>
+  <%= f.input :name, required: false %>
+  <%= f.input :content %>
+  <%= f.association :language, prompt: "Choose a language" %>
+  <%= f.button :submit %>
+<% end %>
+
