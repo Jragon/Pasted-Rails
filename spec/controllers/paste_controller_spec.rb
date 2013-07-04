@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe PasteController do
+describe PastesController do
 
 end
