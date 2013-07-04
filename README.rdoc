@@ -2,20 +2,20 @@
 
 A small, probably broken, app that allows users to paste syntax highlighted pastes using CodeRay. Supperted language below: 
 
-*C
-*C++
-*CSS
-*Delphi
-*ERB
-*Groovy
-*HAML
-*HTML
-*Java
-*JavaScript
-*JSON
-*PHP
-*Python
-*Ruby
-*SQL
-*XML
-*YAML
+ * C
+ * C++
+ * CSS
+ * Delphi
+ * ERB
+ * Groovy
+ * HAML
+ * HTML
+ * Java
+ * JavaScript
+ * JSON
+ * PHP
+ * Python
+ * Ruby
+ * SQL
+ * XML
+ * YAML
