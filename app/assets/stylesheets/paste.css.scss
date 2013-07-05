@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* ----- SimpleForm Styles ----- */
 
+pre {
+  white-space: pre-wrap; 
+}
+
 .simple_form div.input {
   margin-bottom: 10px;
   clear: both; /* Required for Webkit, but not for Gecko */

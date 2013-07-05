@@ -3,6 +3,7 @@ require 'spec_helper'
 describe Paste do
   describe 'Associations' do
     it { should belong_to :language }
+    it { should belong_to :user }
   end
 
   describe 'Validations' do
