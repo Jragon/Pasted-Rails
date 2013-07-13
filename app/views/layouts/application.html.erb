@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<% if flash[:error] %>
+<% if flash[:alert] %>
   <p class='error'><%= flash[:error] %></p>
 <% end %>
 <% if flash[:notice] %>
@@ -17,7 +17,13 @@
 
 <body>
 
+<% if current_user %>
+  Welcome <%= current_user.username %> - <%= link_to 'Logout', logout_path %>
+<% else %>
+  <%= link_to 'Login', login_path %>
+<% end %>
+
 <%= yield %>
-  <%= render 'sessions/form' %>
+
 </body>
 </html>
