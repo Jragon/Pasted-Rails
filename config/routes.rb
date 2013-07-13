@@ -8,6 +8,10 @@ Pasted::Application.routes.draw do
   get 'login', to: 'sessions#new', as: :login
   post 'login', to: 'sessions#create', as: :login
 
+  # User routes
+  get 'signup', to: 'users#new', as: :signup
+  post 'signup', to: 'users#new', as: :signup
+
   # resource :sessions
 
   root to: 'pastes#index'
