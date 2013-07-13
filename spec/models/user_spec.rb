@@ -1,11 +1,11 @@
-  require 'spec_helper'
+require 'spec_helper'
 
 describe User do
   describe 'Associations' do
     it { should have_many :pastes }
   end
 
-  describe 'Validations' do
+describe 'Validations' do
     it { should validate_presence_of :username}
     it { should ensure_length_of(:username).is_at_most(25)}
     it { should validate_presence_of :password}

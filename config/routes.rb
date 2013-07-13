@@ -2,6 +2,13 @@ Pasted::Application.routes.draw do
 
   resources :pastes
   get 'language/:language', to: 'pastes#index', as: :language
+  
+  # Authentication routes
+  get 'logout', to: 'sessions#destroy', as: :logout
+  get 'login', to: 'sessions#new', as: :login
+  post 'login', to: 'sessions#create', as: :login
+
+  # resource :sessions
 
   root to: 'pastes#index'
   # The priority is based upon order of creation:

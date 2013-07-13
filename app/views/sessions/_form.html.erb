@@ -1,0 +1,8 @@
+<div id="login">
+  Login:
+  <%= form_tag login_path do %>
+    <%= text_field_tag 'username', nil, placeholder: 'Username' %>
+    <%= password_field_tag 'password', nil, placeholder: 'Password' %>
+    <%= submit_tag 'Login!' %>
+  <% end %>
+</div>

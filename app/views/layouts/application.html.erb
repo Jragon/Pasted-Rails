@@ -6,9 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
+<% if flash[:error] %>
+  <p class='error'><%= flash[:error] %></p>
+<% end %>
+<% if flash[:notice] %>
+  <p class='notice'><%= flash[:notice] %></p>
+<% end %>
+
+
 <body>
 
 <%= yield %>
-
+  <%= render 'sessions/form' %>
 </body>
 </html>
