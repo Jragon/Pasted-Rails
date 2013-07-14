@@ -1,6 +1,6 @@
 <table id="hor-minimalist-a">
   <tbody>
-    <% collection.each do |paste| %>
+    <% collection.each || resource.pastes.each do |paste| %>
       <tr>
         <td><%= link_to paste.name, paste %></td>
         <td><%= link_to paste.language.name, language_path(paste.language.name) %></td>
