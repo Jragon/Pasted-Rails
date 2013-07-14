@@ -9,4 +9,12 @@ class PastesController < InheritedResources::Base
 
     @pastes.order("created_at DESC")
   end
+
+  def create
+    if current_user
+      params[:paste][:user_id] = current_user.id
+    end
+
+    create!
+  end
 end

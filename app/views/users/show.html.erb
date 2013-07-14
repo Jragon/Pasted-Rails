@@ -1,13 +1,16 @@
+<h1><%= @user.username %></h1>
+
 <table id="hor-minimalist-a">
   <tbody>
-    <% collection.each do |paste| %>
+    <% @user.pastes.each do |paste| %>
       <tr>
         <td><%= link_to paste.name, paste %></td>
         <td><%= link_to paste.language.name, language_path(paste.language.name) %></td>
         <td><%= link_to "Delete Paste", paste, method: :delete %></td>
         <td><%= lines paste.content, paste.language %></td>
-        <td><%= paste.user.username if paste.user %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'New Paste', new_paste_path %>

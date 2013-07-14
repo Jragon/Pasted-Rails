@@ -9,8 +9,9 @@ Pasted::Application.routes.draw do
   post 'login', to: 'sessions#create', as: :login
 
   # User routes
+  resources :users
   get 'signup', to: 'users#new', as: :signup
-  post 'signup', to: 'users#new', as: :signup
+  # post 'signup', to: 'users#new', as: :signup
 
   # resource :sessions
 
