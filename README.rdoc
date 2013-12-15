@@ -1,6 +1,6 @@
 ==Pasted Rails
 
-A small, probably broken, app that allows users to paste syntax highlighted pastes using CodeRay. Supperted language below: 
+A small, probably broken, app that allows users to paste syntax highlighted pastes using CodeRay. Supported language below: 
 
  * C
  * C++
